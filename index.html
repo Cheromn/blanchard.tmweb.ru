@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanchard — художественная галерея</title>
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Italic.woff" as="font" type="font/woff" crossorigin>
+
+    <link rel="icon" href="img/header/favicon.png" type="image/png">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/header.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/hero.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/about-us.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/gallery.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/catalog.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/events.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/publications.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/projects.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/contacts.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/footer.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/normalize.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" media="all" href="css/style.css">
+
+    <script defer src="./js/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/jquery.scrollbar.min.js"></script>
+    <script defer src="./js/slick.min.js"></script>
+    <script defer src="./js/index.js"></script>
+
+</head>
+<body>
+<!--header--------------------------------------------------------------------------------------------------------------------------------->
+    <header class="header">
+        <div class="container header-container">
+          <picture class="header__picture">
+            <img class="header__logo" src="./img/header/header-logo.svg" alt="Blanchard — художественная галерея">
+        </picture>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item"><a aria-label="Нажмите чтобы перейти в раздел и узнать о нас" href="#about-us" class="header-link">O&nbsp;нас</a></li>
+                    <li class="header-item"><a aria-label="Нажмите чтобы перейти в раздел галереи" href="#gallery" class="header-link">Галерея</a></li>
+                    <li class="header-item"><a aria-label="Нажмите чтобы перейти в каталог" href="#catalog" class="header-link">Каталог</a></li>
+                    <li class="header-item"><a aria-label="Нажмите чтобы перейти в раздел с событиями" href="#events" class="header-link">События</a></li>
+                    <li class="header-item"><a aria-label="Нажмите чтобы перейти в раздел издания" href="#publications" class="header-link">Издания</a></li>
+                    <li class="header-item"><a aria-label="Нажмите чтобы перейти в раздел проектов" href="#projects" class="header-link">Проекты</a></li>
+                    <li class="header-item"><a aria-label="Нажмите чтобы перейти в раздел с контактами" href="#contacts" class="header-link">Контакты</a></li>
+                </ul>
+            </nav>
+<!--burger-->
+           <div class="burger-container">
+            <div class="burger-icon">
+              <span></span>
+          </div>
+           </div>
+           <div class="burger">
+            <ul class="menu burger__menu">
+                  <li class="menu__item"><a aria-label="Нажмите чтобы перейти в раздел и узнать о нас" href="#about-us" class="menu__link">O&nbsp;нас</a></li>
+                  <li class="menu__item"><a aria-label="Нажмите чтобы перейти в раздел галереи" href="#gallery" class="menu__link">Галерея</a></li>
+                  <li class="menu__item"><a aria-label="Нажмите чтобы перейти в каталог" href="#catalog" class="menu__link">Каталог</a></li>
+                  <li class="menu__item"><a aria-label="Нажмите чтобы перейти в раздел с событиями" href="#events" class="menu__link">События</a></li>
+                  <li class="menu__item"><a aria-label="Нажмите чтобы перейти в раздел издания" href="#publications" class="menu__link">Издания</a></li>
+                  <li class="menu__item"><a aria-label="Нажмите чтобы перейти в раздел проектов" href="#projects" class="menu__link">Проекты</a></li>
+                  <li class="menu__item"><a aria-label="Нажмите чтобы перейти в раздел с контактами" href="#contacts" class="menu__link">Контакты</a></li>
+            </ul>
+                <a href="#" class="menu-account-link menu-account-icon">Войти</a>
+            </div>
+
+
+            <div class="header-account">
+                <a href="#" class="header-account__link header-account-icon">Войти</a>
+            </div>
+<!--select-->
+            <div class="header__form-container">
+              <div class="header__select-container">
+                  <select class="select" aria-label="Реализм" name="select">
+                      <option disabled selected>Реализм</option>
+                      <option value="Веккьетта">Веккьетта</option>
+                      <option value="Андреа Верроккьо">Андреа&nbsp;Верроккьо</option>
+                      <option value="Доменико Гирландайо">Доменико&nbsp;Гирландайо</option>
+                      <option value="Беноццо Гоццоли">Беноццо&nbsp;Гоццоли</option>
+                      <option value="Граначчи Франческо"> Граначчи&nbsp;Франческо</option>
+                      <option value="Грегорио ди Чекко">Грегорио&nbsp;ди&nbsp;Чекко</option>
+                      <option value="Джованни да Удине">Джованни&nbsp;да&nbsp;Удине</option>
+                      <option value="Джованни ди Паоло">Джованни&nbsp;ди&nbsp;Паоло</option>
+                      <option value="Джорджоне">Джорджоне</option>
+                  </select>
+                  <select class="select" aria-label="Импрессионизм" name="select">
+                      <option disabled selected>Импрессионизм</option>
+                      <option value="Веккьетта">Веккьетта</option>
+                      <option value="Андреа Верроккьо">Андреа&nbsp;Верроккьо</option>
+                      <option value="Доменико Гирландайо">Доменико&nbsp;Гирландайо</option>
+                      <option value="Беноццо Гоццоли">Беноццо&nbsp;Гоццоли</option>
+                      <option value="Граначчи Франческо"> Граначчи&nbsp;Франческо</option>
+                      <option value="Грегорио ди Чекко">Грегорио&nbsp;ди&nbsp;Чекко</option>
+                      <option value="Джованни да Удине">Джованни&nbsp;да&nbsp;Удине</option>
+                      <option value="Джованни ди Паоло">Джованни&nbsp;ди&nbsp;Паоло</option>
+                      <option value="Джорджоне">Джорджоне</option>
+                  </select>
+                  <select class="select" aria-label="Постимпрессионизм" name="select">
+                      <option disabled selected>Постимпрессионизм</option>
+                      <option value="Веккьетта">Веккьетта</option>
+                      <option value="Андреа Верроккьо">Андреа&nbsp;Верроккьо</option>
+                      <option value="Доменико Гирландайо">Доменико&nbsp;Гирландайо</option>
+                      <option value="Беноццо Гоццоли">Беноццо&nbsp;Гоццоли</option>
+                      <option value="Граначчи Франческо"> Граначчи&nbsp;Франческо</option>
+                      <option value="Грегорио ди Чекко">Грегорио&nbsp;ди&nbsp;Чекко</option>
+                      <option value="Джованни да Удине">Джованни&nbsp;да&nbsp;Удине</option>
+                      <option value="Джованни ди Паоло">Джованни&nbsp;ди&nbsp;Паоло</option>
+                      <option value="Джорджоне">Джорджоне</option>
+                  </select>
+                  <select class="select" aria-label="Авангард" name="select">
+                      <option disabled selected>Авангард</option>
+                      <option value="Веккьетта">Веккьетта</option>
+                      <option value="Андреа Верроккьо">Андреа&nbsp;Верроккьо</option>
+                      <option value="Доменико Гирландайо">Доменико&nbsp;Гирландайо</option>
+                      <option value="Беноццо Гоццоли">Беноццо&nbsp;Гоццоли</option>
+                      <option value="Граначчи Франческо"> Граначчи&nbsp;Франческо</option>
+                      <option value="Грегорио ди Чекко">Грегорио&nbsp;ди&nbsp;Чекко</option>
+                      <option value="Джованни да Удине">Джованни&nbsp;да&nbsp;Удине</option>
+                      <option value="Джованни ди Паоло">Джованни&nbsp;ди&nbsp;Паоло</option>
+                      <option value="Джорджоне">Джорджоне</option>
+                  </select>
+                  <select class="select" aria-label="Футуризм" name="select">
+                      <option disabled selected>Футуризм</option>
+                      <option value="Веккьетта">Веккьетта</option>
+                      <option value="Андреа Верроккьо">Андреа&nbsp;Верроккьо</option>
+                      <option value="Доменико Гирландайо">Доменико&nbsp;Гирландайо</option>
+                      <option value="Беноццо Гоццоли">Беноццо&nbsp;Гоццоли</option>
+                      <option value="Граначчи Франческо"> Граначчи&nbsp;Франческо</option>
+                      <option value="Грегорио ди Чекко">Грегорио&nbsp;ди&nbsp;Чекко</option>
+                      <option value="Джованни да Удине">Джованни&nbsp;да&nbsp;Удине</option>
+                      <option value="Джованни ди Паоло">Джованни&nbsp;ди&nbsp;Паоло</option>
+                      <option value="Джорджоне">Джорджоне</option>
+                  </select>
+
+              </div>
+              <div class="search-container">
+                <form class="search-form" action="#" method="POST">
+                  <input class="search-input" name="search" placeholder="Поиск по сайту" type="search">
+                </form>
+                <button class="search-btn" type="submit"></button>
+              </div>
+             </div>
+          </div>
+
+
+    </header>
+
+    <main>
+<!--section-hero--------------------------------------------------------------------------------------------------------------------------------->
+        <section id="hero" class="hero">
+            <div class="container">
+               <div class="hero-content">
+                   <h1 class="hero-header">
+                    Прикоснитесь к&nbsp;прекрасному
+                   </h1>
+                   <p class="hero-paragrath">
+                    Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+                   </p>
+                   <a href="#" class="hero-button-link">Подписаться на рассылку</a>
+               </div>
+            </div>
+<!--slider--------------------------------------------------------------------------------------------------------------------------------->
+            <picture class="hero-slider">
+              <div class="hero-slider__item">
+                <source  class="hero-slider__picture" srcset="./img/hero/hero-background-1-1024.jpg" media="(max-width: 1024px)">
+                <source  class="hero-slider__picture" srcset="./img/hero/hero-background-1-320.jpg" media="(max-width: 672px)">
+                <img  class="hero-slider__picture" src="./img/hero/hero-background-1-1920.jpg" alt="#">
+              </div>
+                   <div class="hero-slider__item">
+                    <source  class="hero-slider__picture" srcset="./img/hero/hero-background-2-1024.jpg" media="(max-width: 1024px)">
+                    <source  class="hero-slider__picture" srcset="./img/hero/hero-background-2-320.jpg" media="(max-width: 672px)">
+                     <img class="hero-slider__picture" src="./img/hero/hero-background-2-1920.jpg" alt="#">
+                   </div>
+                   <div class="hero-slider__item">
+                    <source  class="hero-slider__picture" srcset="./img/hero/hero-background-3-1024.jpg" media="(max-width: 1024px)">
+                    <source  class="hero-slider__picture" srcset="./img/hero/hero-background-3-320.jpg" media="(max-width: 672px)">
+                     <img class="hero-slider__picture" src="./img/hero/hero-background-3-1920.jpg" alt="#">
+                   </div>
+                  </picture>
+        </section>
+
+<!--section-about-us--------------------------------------------------------------------------------------------------------------------------------->
+        <section id="about-us">
+            <div class="container">
+              <div class="about-us">
+                <h2 class="about-us__header">
+                  О нас
+                </h2>
+                <p class="about-us__text">
+                  Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
+                </p>
+              </div>
+            </div>
+        </section>
+
+<!--section-gallery--------------------------------------------------------------------------------------------------------------------------------->
+        <section id="gallery" class="gallery">
+            <div class="container"></div>
+        </section>
+
+<!--section-catalog--------------------------------------------------------------------------------------------------------------------------------->
+        <section id="catalog" class="catalog">
+            <div class="container"></div>
+        </section>
+
+<!--section-events--------------------------------------------------------------------------------------------------------------------------------->
+        <section id="events" class="events">
+            <div class="container"></div>
+        </section>
+
+<!--section-publications--------------------------------------------------------------------------------------------------------------------------------->
+        <section id="publications" class="publications">
+            <div class="container"></div>
+        </section>
+
+<!--section-projects--------------------------------------------------------------------------------------------------------------------------------->
+        <section id="projects" class="projects">
+            <div class="container"></div>
+        </section>
+
+<!--section-contacts--------------------------------------------------------------------------------------------------------------------------------->
+        <section id="contacts" class="contacts">
+            <div class="container"></div>
+        </section>
+
+    </main>
+
+<!--footer--------------------------------------------------------------------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="container"></div>
+    </footer>
+
+</body>
+</html>
